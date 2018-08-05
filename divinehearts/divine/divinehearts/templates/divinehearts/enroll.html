@@ -1,0 +1,304 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kids School a Education School</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Kids School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'divinehearts/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'divinehearts/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<link rel="stylesheet" href="{% static 'divinehearts/css/flexslider.css' %}" type="text/css" media="screen" />
+<script src="{% static 'divinehearts/js/jquery-1.11.1.min.js' %}"></script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'divinehearts/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'divinehearts/js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- body -->
+	<div class="body-content">
+		<div class="container">
+			<div class="body-content1">
+			<!-- header -->
+				<div class="logo-search">
+					<div class="logo">
+						<h1>
+							<a href="index.html">
+								D<span class="color">i</span><span class="color1">v</span><span class="color2">i</span><span class="color">n</span><span class="color2">e</span>
+							 <span>hearts</span> 
+							 <i>Good Start To Your Child</i>
+						</a>
+					</h1>
+					</div>
+					<div class="search">
+						<form>
+							<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required="">
+							<input type="submit" value=" " >
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			<!-- //header -->
+			<!-- nav -->
+				<div class="navigation">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<nav class="stroke">
+								<ul class="nav navbar-nav">
+									<li class="active">
+				<a href="{% url 'index' %}">Home</a></li>
+				<li><a href="{% url 'about' %}" class="hvr-rectangle-out">About Us</a></li>
+				<li><a href="{% url 'services' %}" class="hvr-rectangle-out">Our services</a></li>
+				<li><a href="{% url 'events' %}" class="hvr-rectangle-out">News & Events</a></li>
+				<li><a href="{% url 'gallery' %}" class="hvr-rectangle-out">Gallery</a></li>
+				<li><a href="{% url 'enroll' %}" class="hvr-rectangle-out">Enroll Now</a></li>
+				<li><a href="{% url 'contact' %}" class="hvr-rectangle-out">Contact Us</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- /.navbar-collapse -->
+					</nav>
+				</div>
+	<!-- contact -->
+	<div class="contact" id="contact">
+			<div class="col-md-12 col-xs-12 contact-grid-agile">
+				<h2>Parent's / Guardian's Information</h2>
+			</div>
+		<div class="container">
+				<div class="col-md-5 col-xs-12 contact-grid-agile">
+					<form action="#" method="post">
+						<h3>Father / <span>Guardian</span></h3>
+						<input type="text" placeholder="First Name" name="name" required="">
+						<input type="text" placeholder="Last Name" name="name" required="">
+						<input type="text" placeholder="Address" name="name" required="">
+						<input type="text" placeholder="Phone Number" name="name" required="">
+						<input type="email" placeholder="Email" name="email" required="">
+				</div>
+				<div class="col-md-5 col-xs-12 contact-grid-agile">
+						<h3>Mother / <span>Guardian</span></h3>
+						<input type="text" placeholder="First Name" name="name" required="">
+						<input type="text" placeholder="Last Name" name="name" required="">
+						<input type="text" placeholder="Address" name="name" required="">
+						<input type="text" placeholder="Phone Number" name="name" required="">
+						<input type="email" placeholder="Email" name="email" required="">
+				</div>
+				<div class="col-md-12 col-xs-12 contact-grid-agile">
+					<h2>Pupil's <span>Information</span></h2>
+				<div class="col-md-5 col-xs-12 contact-grid-agile">
+						<input type="text" placeholder="First Name" name="name" required="">
+						<input type="text" placeholder="Last Name" name="name" required="">
+						<input type="text" placeholder="Address" name="name" required="">
+						<select>
+							<option>Sex</option>
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+						<input type="text" placeholder="parent/Guardian's Phone Number" name="name" required="">
+						<input type="email" placeholder="Parent/ Guardian's email" name="" required="">
+					</div>
+						<div class="col-md-5 col-xs-12 contact-grid-agile">
+							<div class="col-md-4 col-xs-12 contact-grid-agile">
+							<select>
+							<option>Month</option>
+							<option>Jan</option>
+							<option>Feb</option>
+							<option>Mar</option>
+							<option>Apr</option>
+						</select>
+						</div>
+						<div class="col-md-3 col-xs-12 contact-grid-agile">
+							<select>
+							<option>Day</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+						</div>
+						<div class="col-md-5 col-xs-12 contact-grid-agile">
+							<select>
+							<option>Year</option>
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+						</select>
+						</div>
+
+						<input type="text" placeholder="Country of Birth" name="name" required="">
+						<input type="text" placeholder="Languages spoken at home" name="name" required="">
+						<textarea type="text" cols="8" rows="6" placeholder="Medical issues"></textarea>
+						<input type="submit" value="Enroll Now" class="btn btn-success">
+					</form>
+				</div>
+			</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+			<!-- mail -->
+				<!--div class="mail">
+					<h2><span></span> Parents</h2>
+						<div class="col-md-6 map-grid">
+							<h3>Father / <span>Guardian</span></h3>
+							<form>
+								<input type="text" name="name" placeholder="Name">
+								<input type="text" name="name" placeholder="Email Address">
+								<input type="text" name="name" placeholder="Subject">
+								<textarea type="text" cols="8" rows="6" placeholder="Message"></textarea>
+								<input type="submit" value="Submit Now" >
+							</form>
+						</div>
+						<div class="col-md-6 map-grid">
+							<h3>Mother / <span>Guardian</span></h3>
+							<form>
+								<input type="text" name="name" placeholder="Name">
+								<input type="text" name="name" placeholder="Email Address">
+								<input type="text" name="name" placeholder="Subject">
+								<textarea type="text" cols="8" rows="6" placeholder="Message"></textarea>
+								<input type="submit" value="Submit Now" >
+							</form>
+						</div>
+						<h2><span></span> Pupil </h2>
+						<div class="col-md-6 map-grid">
+							<form>
+								<input type="text" name="name" placeholder="Name">
+								<input type="text" name="name" placeholder="Email Address">
+								<input type="text" name="name" placeholder="Subject">
+								<textarea type="text" cols="8" rows="6" placeholder="Message"></textarea>
+								<input type="submit" value="Submit Now" >
+							</form>
+						</div>
+				</div-->
+			<!-- //mail -->
+			</div>
+		</div>
+	</div>
+<!-- //body -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<h3>Sign up for our newsletter</h3>
+			<p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus 
+				tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+			<div class="footer-contact">
+				<form>
+					<input type="text" placeholder="Enter your email to update" required=" ">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid">
+					<p>KAMPALA
+						Makerere Kavule
+						Kavule, UGANDA.
+					<a href="mailto:info@example.com">info@divinehearts.com</a>
+					<p>Phone : +256 750730118</p>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<ul>
+						<li><a href="{% url 'contact' %}">Contact us</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'services' %}">Services</a></li>
+						<li><a href="{% url 'enroll' %}">Enroll Now</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<ul>
+						<li><a href="{% url 'events' %}">News & Events</a></li>
+						<li><a href="{% url 'about' %}">About us</a></li>
+						<li><a href="{% url 'index' %}">Home</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsve" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="images/12.jpg" alt=" " class="img-responsve" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="images/11.jpg" alt=" " class="img-responsve" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsve" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsve" /></a>
+					</div>
+					<div class="footer-grid-left">
+						<a href="single.html"><img src="images/9.jpg" alt=" " class="img-responsve" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="footer-copy">
+				<p>&copy 2018 Divine Hearts School. All rights reserved
+					<a href="www.earlcommunications.com">
+					Earl Communications.
+				</a>
+			</p>
+				<ul>
+					<li><a href="#" class="twitter"><span type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Follow Us On Twitter"></span></a></li>
+					<li><a href="#" class="facebook" id="facebook"><span type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Follow Us On Facebook"></span></a></li>
+					<div class="clearfix"> </div>
+				</ul>
+				<script>
+					$(function () {
+					  $('[data-toggle="tooltip"]').tooltip()
+					})
+				</script>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+<!-- for bootstrap working -->
+	<script src="{% static 'divinehearts/js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+</body>
+</html>
